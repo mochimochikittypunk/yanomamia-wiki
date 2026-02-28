@@ -396,12 +396,13 @@ a:hover {
 @media screen and (max-width: 768px) {
     .mw-sidebar {
         position: fixed;
-        left: -176px;
+        left: -250px;
         top: 48px;
         height: calc(100vh - 48px);
         z-index: 99;
         background: #f8f9fa;
         box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        transition: left 0.3s ease;
     }
 
     .mw-sidebar.active {
@@ -416,6 +417,7 @@ a:hover {
         float: none;
         width: 100%;
         margin: 1em 0;
+        box-sizing: border-box;
     }
 
     .thumb.tright {
@@ -435,8 +437,9 @@ a:hover {
 
     /* モバイル・ヘッダー調整 */
     .mw-header {
-        justify-content: space-between;
+        justify-content: flex-start;
         padding: 0.5rem;
+        gap: 10px;
     }
 
     .mw-logo a {
@@ -448,7 +451,7 @@ a:hover {
     }
 
     .mw-search {
-        margin: 0;
+        margin: 0 0 0 auto;
         flex-grow: 0;
         width: auto;
     }
