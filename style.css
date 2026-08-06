@@ -204,6 +204,36 @@ a:hover {
     margin-top: 1.2em;
 }
 
+/* Article data tables */
+.wikitable {
+    width: auto;
+    max-width: 100%;
+    margin: 1em 0;
+    border: 1px solid var(--color-border);
+    border-collapse: collapse;
+    background-color: #fff;
+    font-size: 95%;
+}
+
+.wikitable caption {
+    padding: 0.4em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.wikitable th,
+.wikitable td {
+    padding: 0.45em 0.65em;
+    border: 1px solid var(--color-border);
+    vertical-align: top;
+}
+
+.wikitable th {
+    width: 11em;
+    background-color: #eaecf0;
+    text-align: left;
+}
+
 /* Infobox */
 .infobox {
     float: right;
@@ -354,6 +384,10 @@ a:hover {
     margin-top: 10px;
 }
 
+.toclevel-2 {
+    margin-left: 1.5em;
+}
+
 .tocnumber {
     color: #202122;
 }
@@ -433,6 +467,25 @@ a:hover {
 
     .mw-content {
         padding: 10px 15px;
+    }
+
+    .traceability-table,
+    .traceability-table tbody,
+    .traceability-table tr,
+    .traceability-table th,
+    .traceability-table td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .traceability-table tr + tr {
+        border-top: 1px solid var(--color-border);
+    }
+
+    .traceability-table th,
+    .traceability-table td {
+        border: 0;
     }
 
     /* モバイル・ヘッダー調整 */
